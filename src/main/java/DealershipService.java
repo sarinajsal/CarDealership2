@@ -1,23 +1,43 @@
+import java.util.Arrays;
+
 public class DealershipService {
 
-    public int countingCars(CarDealership carDealership) {
-        int count = 0;
-        for (int i = 0; i < carDealership.getCarsInStock().length; i++) { //loop through array InStock from carDealership class
-            if (carDealership.getCarsInStock()[i] != null) { //if index i is not equal to null there must be a car, therefore count
-                count++;
+    public int countingCarsMethod(CarDealership carDealership) {
+        int counter = 0;
+        for (int i = 0; i < carDealership.getCarsInStock().length; i++) {
+            if (carDealership.getCarsInStock()[i] != null) {
+                counter++;
             }
 
         }
-        return count;
-
+        return counter;
     }
-    public void addCar(CarDealership carDealership, Car car) {
 
-        for (int i = 0; i < carDealership.getCarsInStock().length; i++) { //loop through array InStock from carDealership class
-            if (carDealership.getCarsInStock()[i] == null) { //if index i is equal to null, there is a space. You can then add car.
-                carDealership.getCarsInStock()[i] = car; // car added to index point i
+    public void addingCarsMethod(CarDealership carDealershipObject, Car car) {
+        for (int i = 0; i < carDealershipObject.getCarsInStock().length; i++) {
+            if (carDealershipObject.getCarsInStock()[i] == null) {
+                carDealershipObject.getCarsInStock()[i] = car;
                 break;
             }
+
+            }
         }
+
+        public Car findCarByManufacturer(String manufacturerWanted){
+            for (Car car:this.carsInStock){
+
+                 ) {
+
+            }
+            }
+
+
+        return Car;
     }
+
 }
+
+
+
+
+

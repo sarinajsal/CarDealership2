@@ -9,7 +9,7 @@ public class CarDealership {
     public CarDealership(String name, int maxCarsOnDisplay) {
         this.name = name;
         this.maxCarsOnDisplay = maxCarsOnDisplay;
-        this.carsInStock = new Car[maxCarsOnDisplay];
+        this.carsInStock = new Car[maxCarsOnDisplay]; //need to understand this?
     }
 
     public String getName() {
